@@ -26,7 +26,7 @@ func main() {
    anton := Developer{
         Code:             []string{"Go", "TS", "JS", "C", "Rust"},
         Interests:        []string{"Frontend", "Backend", "DevOps", "Blockchain", "DeFi"},
-        OperatingSystems: []string{"elementary OS 8"},
+        OperatingSystems: []string{"Pop!_OS", "elementary OS 8", "Ubuntu"},
         ToolsUsed:        []string{"Postman"},
         IDEs:             []string{"VS Code", "neovim"},
     }
