@@ -14,99 +14,84 @@
 
 ```go
 package main
-import "fmt"
-type Developer struct {
-    Name           string
-    Primary        []string
-    Secondary      []string
-    Exploring      []string
-    CoreSkills     []string
-    Interests      []string
-    DeepDive       []string
-    Infrastructure []string
-    Databases      []string
-    ToolsUsed      []string
-    Editors        []string
-    OS             []string
-}
-func main() {
-    anton := Developer{
-        Name:      "Anton",
-        Primary:   []string{"Go"},
-        Secondary: []string{"TypeScript", "JavaScript"},
-        Exploring: []string{"C", "Rust"},
-        CoreSkills: []string{
-            "Concurrency-safe design",
-            "API design",
-            "Microservices",
-            "REST / gRPC",
-            "RabbitMQ",
-        },
-        Interests: []string{
-            "High-load systems",
-            "Distributed systems",
-            "System design",
-            "Performance optimization",
-        },
-        DeepDive: []string{
-            "Go runtime (scheduler, GC)",
-            "Memory model",
-            "Netpoll / epoll",
-            "Profiling (pprof)",
-        },
-        Infrastructure: []string{
-            "Docker",
-            "CI/CD",
-            "Linux",
-            "Nginx",
-        },
-        Databases: []string{
-            "PostgreSQL",
-            "Redis",
-        },
-        ToolsUsed: []string{
-            "Git",
-            "Docker",
-            "Postman",
-            "DBeaver",
-            "htop",
-            "curl",
-        },
-        Editors: []string{"Neovim", "VS Code"},
-        OS:      []string{"Linux (Pop!_OS, elementary OS, Ubuntu)"},
-    }
 
-    fmt.Printf("👋 Hello! I'm %s, a backend-focused developer.\n\n", anton.Name)
-    fmt.Println("🚀 Languages:")
-    fmt.Printf("  Primary:   %v\n", anton.Primary)
-    fmt.Printf("  Secondary: %v\n", anton.Secondary)
-    fmt.Printf("  Exploring: %v\n\n", anton.Exploring)
-    fmt.Println("🧠 Core Skills:")
-    for _, skill := range anton.CoreSkills {
-        fmt.Printf("  • %s\n", skill)
-    }
-    fmt.Println("\n🎯 Interests:")
-    for _, interest := range anton.Interests {
-        fmt.Printf("  • %s\n", interest)
-    }
-    fmt.Println("\n🔬 Deep Dive:")
-    for _, topic := range anton.DeepDive {
-        fmt.Printf("  • %s\n", topic)
-    }
-    fmt.Println("\n🧱 Infrastructure:")
-    for _, infra := range anton.Infrastructure {
-        fmt.Printf("  • %s\n", infra)
-    }
-    fmt.Println("\n🗄️ Databases:")
-    fmt.Printf("  %v\n", anton.Databases)
-    fmt.Println("\n🛠️ Tools:")
-    for _, tool := range anton.ToolsUsed {
-        fmt.Printf("  • %s\n", tool)
-    }
-    fmt.Println("\n🧰 Editors:")
-    fmt.Printf("  %v\n", anton.Editors)
-    fmt.Println("\n💻 Operating Systems:")
-    fmt.Printf("  %v\n", anton.OS)
+import "fmt"
+
+type Developer struct {
+	Name       string
+	Focus      string
+	Languages  []string
+	Frontend   []string
+	Backend    []string
+	Systems    []string
+	Data       []string
+	Infra      []string
+	Tools      []string
+	Environment []string
+}
+
+func main() {
+	anton := Developer{
+		Name:  "Anton",
+		Focus: "Backend (Go) with strong Frontend experience",
+
+		Languages: []string{
+			"Go", "TypeScript", "JavaScript",
+		},
+
+		Frontend: []string{
+			"React", "Vue", "Angular",
+		},
+
+		Backend: []string{
+			"REST", "gRPC", "Microservices", "RabbitMQ",
+		},
+
+		Systems: []string{
+			"High-load systems",
+			"Distributed systems",
+			"Performance optimization",
+			"Concurrency & memory model",
+		},
+
+		Data: []string{
+			"PostgreSQL", "Redis",
+		},
+
+		Infra: []string{
+			"Docker", "CI/CD", "Linux", "Nginx",
+		},
+
+		Tools: []string{
+			"Git", "Postman", "DBeaver", "curl", "htop",
+		},
+
+		Environment: []string{
+			"Neovim", "VS Code", "Linux",
+		},
+	}
+
+	fmt.Printf("👋 Hi, I'm %s\n", anton.Name)
+	fmt.Printf("💡 %s\n\n", anton.Focus)
+
+	fmt.Printf("🚀 Languages: %v\n", anton.Languages)
+	fmt.Printf("🎨 Frontend:  %v\n", anton.Frontend)
+	fmt.Printf("⚙️ Backend:   %v\n\n", anton.Backend)
+
+	fmt.Println("🧠 Systems:")
+	for _, s := range anton.Systems {
+		fmt.Printf("  • %s\n", s)
+	}
+
+	fmt.Printf("\n🗄️ Data: %v\n", anton.Data)
+	fmt.Printf("🧱 Infra: %v\n", anton.Infra)
+
+	fmt.Println("\n🛠️ Tools:")
+	for _, t := range anton.Tools {
+		fmt.Printf("  • %s\n", t)
+	}
+
+	fmt.Printf("\n💻 Environment: %v\n", anton.Environment)
 }
 ```
 
