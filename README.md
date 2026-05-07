@@ -120,7 +120,7 @@ func main() {
 
 # 🏆 GitHub Trophies
 
-![](https://github-profile-trophy.vercel.app/?username=antonhancharyk&theme=radical&no-frame=false&no-bg=false&margin-w=4)
+![](https://github-profile-trophy.vercel.app/?username=antonGoncharik&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
 # Profile Views
 
