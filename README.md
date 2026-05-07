@@ -112,16 +112,12 @@ func main() {
 # ⚙️ GitHub Analytics
 
 <p align="center">
-<a href="https://github.com/antonhancharyk">
-<img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=antonhancharyk&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
-<img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=antonhancharyk&layout=compact&langs_count=8&theme=algolia"/>
+<a href="https://github.com/antonGoncharik">
+<img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=antonGoncharik&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
+<img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=antonGoncharik&layout=compact&langs_count=8&theme=algolia"/>
 </a>
 </p>
 
 # 🏆 GitHub Trophies
 
 ![](https://github-profile-trophy.vercel.app/?username=antonGoncharik&theme=radical&no-frame=false&no-bg=false&margin-w=4)
-
-# Profile Views
-
-![](https://komarev.com/ghpvc/?username=antonhancharyk&style=for-the-badge)
